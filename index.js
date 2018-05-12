@@ -63,7 +63,7 @@ function Square(s) {
     return "width, height"
   }
 }
-Square.prototype = Object.create(Quadrilateral.prototype)
+Square.prototype = Object.create(Rectangle.prototype)
 
 function Triangle(s1, s2, s3) {
   this.sides = [new Side(s1), new Side(s2), new Side(s3)]
