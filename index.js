@@ -23,7 +23,7 @@ Shape.prototype.move = function(x,y) {
 function Circle(r) {
   this.radius = r
   this.diameter = () => { return this.radius * 2 }
-  this.area = () => { return Math.PI * this.radius ** 2 }
+  this.area = () => { return Math.PI * this.radius ** 2 } 
   this.circumference = () => { return Math.PI * this.radius * 2 }
 }
 Circle.prototype = Object.create(Shape.prototype)
@@ -31,3 +31,4 @@ Circle.prototype = Object.create(Shape.prototype)
 function Polygon() {
 
 }
+Polygon.prototype = Object.create(Shape.prototype)
