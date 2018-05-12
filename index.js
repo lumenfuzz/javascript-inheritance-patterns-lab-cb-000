@@ -28,7 +28,9 @@ function Circle(r) {
 }
 Circle.prototype = Object.create(Shape.prototype)
 
-function Polygon() {
-
+function Polygon(array) {
+  this.perimeter = array.reduce( (sum, e) => {
+    return sum + e.length
+  })
 }
 Polygon.prototype = Object.create(Shape.prototype)
