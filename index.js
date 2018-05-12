@@ -24,3 +24,7 @@ Shape.prototype.move = function(x,y) {
 function Circle() {
 }
 Circle.prototype = Object.create(Shape.prototype)
+
+function Polygon() {
+
+}
