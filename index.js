@@ -15,7 +15,6 @@ function Shape() {
   Shape.prototype.addToPlane = (x,y) => {
     this.position = new Point(x,y)
   }
-  this.addToPlane = Shape.prototype.addToPlane
   Shape.prototype.move = (x,y) => {
     this.position.x = x
     this.position.y = y
