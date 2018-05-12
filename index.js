@@ -10,8 +10,7 @@ function Side(length) {
   this.length = length
 }
 
-function Shape() {
-}
+function Shape() {}
 Shape.prototype = Object.create(Shape.prototype)
 Shape.prototype.addToPlane = function(x,y) {
   this.position = new Point(x,y)
@@ -21,7 +20,10 @@ Shape.prototype.move = function(x,y) {
   this.position.y = y
 }
 
-function Circle() {
+function Circle(r) {
+  this.radius = r
+  this.area = Math.PI * r ** 2
+  this.circumference = 2 * Math.PI * r
 }
 Circle.prototype = Object.create(Shape.prototype)
 
