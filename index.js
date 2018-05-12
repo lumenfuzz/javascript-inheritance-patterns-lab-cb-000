@@ -11,17 +11,17 @@ function Side(length) {
 }
 
 function Shape() {
-  this.prototype = Object.create(Object.prototype)
-  Shape.prototype.addToPlane = (x,y) => {
-    this.position = new Point(x,y)
-  }
-  Shape.prototype.move = (x,y) => {
-    this.position.x = x
-    this.position.y = y
-  }
+
+}
+Shape.prototype = Object.create(Object.prototype)
+Shape.prototype.addToPlane = (x,y) => {
+  this.position = new Point(x,y)
+}
+Shape.prototype.move = (x,y) => {
+  this.position.x = x
+  this.position.y = y
 }
 
-new Shape()
 
 function Circle() {
   Circle.prototype = Object.create(Shape.prototype)
