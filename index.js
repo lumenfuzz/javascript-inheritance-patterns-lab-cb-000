@@ -16,11 +16,11 @@ function Shape() {
     this.position = new Point(x,y)
   }
   this.addToPlane = Shape.prototype.addToPlane
-  this.prototype.move = (x,y) => {
+  Shape.prototype.move = (x,y) => {
     this.position.x = x
     this.position.y = y
   }
-  this.move = this.prototype.move
+  this.move = Shape.prototype.move
 }
 
 var shapessa = new Shape()
