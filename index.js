@@ -21,7 +21,6 @@ Shape.prototype.move = function(x,y) {
   this.position.y = y
 }
 
-
 function Circle() {
-  Circle.prototype = Object.create(Shape.prototype)
 }
+Circle.prototype = Object.create(Shape.prototype)
