@@ -59,8 +59,9 @@ Rectangle.prototype.area = function() {
 function Square(s) {
   this.width = s;
   this.height = s;
+  this.sides = [new Side(s), new Side(s), new Side(s), new Side(s)]
   this.listProperties = function() {
-    return "width, height"
+    return "width, height, sides"
   }
 }
 Square.prototype = Object.create(Rectangle.prototype)
