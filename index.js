@@ -14,7 +14,6 @@ function Shape() {
   this.prototype = Object.create(Shape.prototype)
   Shape.prototype.addToPlane = (x,y) => {
     this.position = new Point(x,y)
-    return "exists"
   }
   this.addToPlane = Shape.prototype.addToPlane
   this.prototype.move = (x,y) => {
