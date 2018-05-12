@@ -6,4 +6,15 @@ function Point(x,y) {
   }
 }
 
-var pointessa = new Point(2,3)
+function Side(length) {
+  this.length = length
+}
+
+function Shape() {
+  this.prototype.addToPlane = (x,y) => {
+    this.position = new Point(x,y)
+  }
+  this.prototype.move = (x,y) => {
+    
+  }
+}
