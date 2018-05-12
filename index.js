@@ -34,6 +34,6 @@ function Polygon(array) {
 Polygon.prototype = Object.create(Shape.prototype)
 Polygon.prototype.perimeter = function() {
   this.sides.reduce( (sum, e) => {
-    return sum + e
-  })
+    return sum + e.length
+  }, 0)
 }
