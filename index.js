@@ -19,7 +19,5 @@ function Shape() {
     this.position.x = x
     this.position.y = y
   }
-  this.move = Shape.prototype.move
-}
 
 var shapessa = new Shape()
