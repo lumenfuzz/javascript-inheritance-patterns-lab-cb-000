@@ -37,3 +37,6 @@ Polygon.prototype.perimeter = function() {
     return sum + e.length
   }, 0)
 }
+Polygon.prototype.numberOfSides = function() {
+  return this.sides.length
+}
