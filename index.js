@@ -45,3 +45,22 @@ function Quadrilateral(s1,s2,s3,s4) {
   this.sides = [new Side(s1), new Side(s2), new Side(s3), new Side(s4)]
 }
 Quadrilateral.prototype = Object.create(Polygon.prototype)
+
+function Rectangle(w,h) {
+  this.width = w;
+  this.height = h;
+  this.sides = [new Side(w), new Side(h), new Side(w), new Side(h)]
+}
+Rectangle.prototype = Object.create(Quadrilateral.prototype)
+Rectangle.prototype.area = function() {
+  return this.width * this.height
+}
+
+function Square(s) {
+  this.width = s;
+  this.height = s;
+  this.listProperties = function() {
+    return "width, height"
+  }
+}
+Square.prototype = Object.create(Quadrilateral.prototype)
