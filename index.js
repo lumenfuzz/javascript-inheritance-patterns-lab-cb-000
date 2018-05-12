@@ -12,11 +12,11 @@ function Side(length) {
 
 function Shape() {
   this.prototype = Object.create(Shape.prototype)
-  this.prototype.addToPlane = function(x,y) {
+  Shape.prototype.addToPlane = (x,y) => {
     this.position = new Point(x,y)
     return "exists"
   }
-  this.addToPlane = this.prototype.addToPlane
+  this.addToPlane = Shape.prototype.addToPlane
   this.prototype.move = (x,y) => {
     this.position.x = x
     this.position.y = y
