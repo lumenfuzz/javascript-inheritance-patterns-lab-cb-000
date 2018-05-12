@@ -15,6 +15,6 @@ function Shape() {
     this.position = new Point(x,y)
   }
   this.prototype.move = (x,y) => {
-    
+
   }
 }
