@@ -19,5 +19,6 @@ function Shape() {
     this.position.x = x
     this.position.y = y
   }
+}
 
 var shapessa = new Shape()
