@@ -11,7 +11,7 @@ function Side(length) {
 }
 
 function Shape() {
-  this.addToPlane = Shape.prototype.addToPlane
+
 }
 Shape.prototype = Object.create(Shape.prototype)
 Shape.prototype.addToPlane = (x,y) => {
