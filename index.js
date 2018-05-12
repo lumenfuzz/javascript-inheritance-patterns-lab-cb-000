@@ -11,10 +11,12 @@ function Side(length) {
 }
 
 function Shape() {
-  Shape.prototype.addToPlane = (x,y) => {
+  this.prototype.addToPlane = (x,y) => {
     this.position = new Point(x,y)
   }
   this.prototype.move = (x,y) => {
 
   }
 }
+
+var shapessa = new Shape()
