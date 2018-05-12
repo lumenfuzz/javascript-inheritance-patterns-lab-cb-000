@@ -11,16 +11,18 @@ function Side(length) {
 }
 
 function Shape() {
+  this.position = null
 }
-
 Shape.prototype = Object.create(Shape.prototype)
 Shape.prototype.addToPlane = (x,y) => {
-  Shape.position = new Point(x,y)
+  this.position = new Point(x,y)
 }
 Shape.prototype.move = (x,y) => {
-  Shape.position.x = x
-  Shape.position.y = y
+  this.position.x = x
+  this.position.y = y
 }
+
+var first_shape = new Shape()
 
 function Circle() {
   Circle.prototype = Object.create(Shape.prototype)
