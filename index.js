@@ -22,7 +22,7 @@ Shape.prototype.move = function(x,y) {
 
 function Circle(r) {
   this.radius = r
-  this.diameter = () => {this.radius * 2}
+  this.diameter = () => { return this.radius * 2 }
   this.area = Math.PI * r ** 2
   this.circumference = 2 * Math.PI * r
 }
