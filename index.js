@@ -21,4 +21,6 @@ function Shape() {
   }
 }
 
-var shapessa = new Shape()
+function Circle() {
+  this.prototype = Object.create(Shape.prototype)
+}
