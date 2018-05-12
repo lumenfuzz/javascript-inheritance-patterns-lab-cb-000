@@ -24,5 +24,5 @@ function Shape() {
 var first_shape = new Shape()
 
 function Circle() {
-  this.prototype = Object.create(Shape.prototype)
+  Circle.prototype = Object.create(Shape.prototype)
 }
