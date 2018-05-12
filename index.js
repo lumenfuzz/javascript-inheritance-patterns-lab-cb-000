@@ -15,11 +15,11 @@ function Shape() {
 
 Shape.prototype = Object.create(Shape.prototype)
 Shape.prototype.addToPlane = (x,y) => {
-  this.position = new Point(x,y)
+  Shape.position = new Point(x,y)
 }
 Shape.prototype.move = (x,y) => {
-  this.position.x = x
-  this.position.y = y
+  Shape.position.x = x
+  Shape.position.y = y
 }
 
 function Circle() {
